@@ -1,6 +1,7 @@
 package day01
 
 import (
+	"fmt"
 	"github.com/nambrosini/aoc-go/util"
 	"log"
 	"slices"
@@ -11,8 +12,9 @@ import (
 
 func Run() {
 	input := util.ReadInput(1)
-	log.Printf("Part 1: %d\n", part1(input))
-	log.Printf("Part 2: %d\n", part2(input))
+	fmt.Println("Day 02")
+	fmt.Printf("Part 1: %d\n", part1(input))
+	fmt.Printf("Part 2: %d\n", part2(input))
 }
 
 func part1(input string) int {
