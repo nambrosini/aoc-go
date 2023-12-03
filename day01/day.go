@@ -26,7 +26,7 @@ func part1(input string) int {
 			if unicode.IsDigit(c) {
 				v, err := strconv.Atoi(string(c))
 				if err != nil {
-					log.Fatal("Coulnd't conver num", err)
+					log.Fatal("Couldn't convert num", err)
 				}
 				nums = append(nums, v)
 			}
