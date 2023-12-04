@@ -8,9 +8,11 @@ import (
 	"strings"
 )
 
+const DAY = 2
+
 func Run() {
 	input := generate(util.ReadInput(2))
-	fmt.Println("Day 02")
+	fmt.Printf("Day 0%d\n", DAY)
 	fmt.Printf("Part 1: %d\n", part1(input))
 	fmt.Printf("Part 2: %d\n", part2(input))
 }

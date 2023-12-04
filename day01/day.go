@@ -10,9 +10,11 @@ import (
 	"unicode"
 )
 
+const DAY = 1
+
 func Run() {
 	input := util.ReadInput(1)
-	fmt.Println("Day 02")
+	fmt.Printf("Day 0%d\n", DAY)
 	fmt.Printf("Part 1: %d\n", part1(input))
 	fmt.Printf("Part 2: %d\n", part2(input))
 }

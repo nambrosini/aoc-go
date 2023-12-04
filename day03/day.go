@@ -10,17 +10,19 @@ import (
 	"unicode"
 )
 
+const DAY = 3
+
 func Run() {
 	input := generate(util.ReadInput(3))
-	fmt.Println("Day 03")
+	fmt.Printf("Day 0%d\n", DAY)
 	fmt.Printf("Part 1: %d\n", part1(input))
 	fmt.Printf("Part 2: %d\n", part2(input))
 }
 
 func generate(input string) [][]rune {
-	schema := [][]rune{}
+	var schema [][]rune
 	for _, l := range strings.Split(input, "\n") {
-		row := []rune{}
+		var row []rune
 		for _, c := range l {
 			row = append(row, c)
 		}
